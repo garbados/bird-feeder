@@ -1,9 +1,11 @@
 {
   "name": "bird-feeder",
-  "version": "1.0.0-alpha",
+  "version": "1.0.1-alpha",
   "description": "An extremely basic RSS feed reader.",
   "main": "index.js",
-  "bin": "./bin.js",
+  "bin": {
+    "bird-feeder": "./bin.js"
+  },
   "scripts": {
     "start": "node bin.js",
     "test": "standard && dependency-check . --unused --no-dev -i pug -i yargs && mocha"
@@ -21,5 +23,16 @@
     "pug": "^2.0.3",
     "request": "^2.85.0",
     "yargs": "^11.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garbados/bird-feeder.git"
+  },
+  "keywords": [
+    "rss"
+  ],
+  "bugs": {
+    "url": "https://github.com/garbados/bird-feeder/issues"
+  },
+  "homepage": "https://github.com/garbados/bird-feeder#readme"
 }

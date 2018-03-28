@@ -9,9 +9,9 @@ Given an array of feed URLs, it collects the 20 most recent entries from each an
 Download the source using [git](https://git-scm.com/) and install dependencies using [npm](http://npmjs.com/):
 
 ```bash
-git clone garbados/bird-feeder
-cd bird-feeder
-npm i
+$ git clone garbados/bird-feeder
+$ cd bird-feeder
+$ npm install
 ```
 
 Now edit `config.json` to contain the feed URLs you want to follow:
@@ -30,7 +30,7 @@ Now start the server:
 
 ```bash
 $ npm start
-Now listening on port 3000...
+Now listening on port 3000
 ```
 
 You can also add the `bird-feeder` command to your `$PATH` with npm:
@@ -56,14 +56,20 @@ Options:
 
 After installing dependencies, run the test suite with npm:
 
-```
+```bash
 $ npm install
 $ npm test
 ```
 
+Here's a one-liner for checking test coverage:
+
+```bash
+$ npx nyc npm test
+```
+
 ## Contributing
 
-To report bugs or request features, file an [issue](#TODO). If you want to merge code, file a [pull request](#TODO). I reserve sole discretion for the moderation of this project.
+To report bugs or request features, file an [issue](https://github.com/garbados/bird-feeder/issues). If you want to merge code, file a [pull request](https://github.com/garbados/bird-feeder/pulls). I reserve sole discretion for the moderation of this project.
 
 ## License
 
