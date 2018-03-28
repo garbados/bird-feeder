@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    //- meta
+    meta(charset="utf-8")
+    meta(
+      name="viewport",
+      content="width=device-width, initial-scale=1"
+      )
+    //- stylesheets
+    link(
+      rel="stylesheet",
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"
+      )
+    //- title
+    title= title
+  body
+    section.section
+      .container
+        h1.title= name
+        p.subtitle= description
+      hr
+      each item in items
+        section.box
+          a(href=item.link)
+            p.help= item.author
+            p.help= item.pubDate
+            h1.title= item.title
+            p.subtitle= item.summary

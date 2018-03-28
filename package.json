@@ -1,0 +1,23 @@
+{
+  "name": "bird-feeder",
+  "version": "1.0.0-alpha",
+  "description": "An extremely basic RSS feed reader.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && dependency-check . --unused --no-dev -i pug -i yargs && mocha"
+  },
+  "author": "Diana Thayer <garbados@gmail.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "dependency-check": "^3.1.0",
+    "mocha": "^5.0.5",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "feedparser": "^2.2.9",
+    "pug": "^2.0.3",
+    "request": "^2.85.0",
+    "yargs": "^11.0.0"
+  }
+}
