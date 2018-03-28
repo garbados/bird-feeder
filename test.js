@@ -14,8 +14,6 @@ describe('bird-feeder', function () {
   })
 
   it('concatFeeds', function () {
-    return concatFeeds(feedUrls).then((items) => {
-      console.log(items)
-    })
+    return concatFeeds(feedUrls)
   })
 })
