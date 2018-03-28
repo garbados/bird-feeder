@@ -3,7 +3,9 @@
   "version": "1.0.0-alpha",
   "description": "An extremely basic RSS feed reader.",
   "main": "index.js",
+  "bin": "./bin.js",
   "scripts": {
+    "start": "node bin.js",
     "test": "standard && dependency-check . --unused --no-dev -i pug -i yargs && mocha"
   },
   "author": "Diana Thayer <garbados@gmail.com>",
