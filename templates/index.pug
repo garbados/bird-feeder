@@ -22,8 +22,9 @@ html(lang="en")
       hr
       each item in items
         section.box
-          a(href=item.link)
-            p.help= item.author
-            p.help= item.pubDate
-            h1.title= item.title
-            p.subtitle= item.summary
+            a.box(href=item.link)
+              h1.title= item.title
+              p.subtitle !{item.summary}
+              p.help= item.author
+              p.help= item.pubDate
+            .content !{item.description}
