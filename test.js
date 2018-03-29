@@ -1,7 +1,8 @@
 /* global describe, it */
 'use strict'
 
-const { concatFeeds, getFeed } = require('./index.js')
+const assert = require('assert')
+const { concatFeeds, feedServer, getFeed } = require('./index.js')
 
 const feedUrls = [
   'http://feeds.arstechnica.com/arstechnica/index',
@@ -15,5 +16,10 @@ describe('bird-feeder', function () {
 
   it('concatFeeds', function () {
     return concatFeeds(feedUrls)
+  })
+
+  it('feedServer', function () {
+    const app = feedServer({ feedUrls })
+    assert(app.emit)
   })
 })
