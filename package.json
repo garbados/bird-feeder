@@ -1,6 +1,6 @@
 {
   "name": "bird-feeder",
-  "version": "1.0.1-beta",
+  "version": "1.1.0-beta",
   "description": "An extremely basic RSS feed reader.",
   "main": "index.js",
   "bin": {
