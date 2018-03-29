@@ -1,5 +1,12 @@
 # bird-feeder
 
+[![Stability](https://img.shields.io/badge/stability-experimental-orange.svg?style=flat-square)](https://nodejs.org/api/documentation.html#documentation_stability_index)
+[![npm version](https://img.shields.io/npm/v/bird-feeder.svg?style=flat-square)](https://www.npmjs.com/package/bird-feeder)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
+[![Build Status](https://img.shields.io/travis/garbados/bird-feeder/master.svg?style=flat-square)](https://travis-ci.org/garbados/bird-feeder)
+[![Coverage Status](https://img.shields.io/coveralls/github/garbados/bird-feeder.svg?style=flat-square)](https://coveralls.io/github/garbados/bird-feeder?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/garbados/bird-feeder.svg)](https://greenkeeper.io/)
+
 An extremely basic self-hosted RSS reader.
 
 Given an array of feed URLs, it collects the 20 most recent entries from each and concatenates them in order of publish date. It then renders some information about them in a static front page. By default, it reloads articles on each page load.
