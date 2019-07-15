@@ -22,7 +22,7 @@
     "feedparser": "^2.2.9",
     "pug": "^2.0.3",
     "request": "^2.85.0",
-    "yargs": "^11.0.0"
+    "yargs": "^13.3.0"
   },
   "repository": {
     "type": "git",
