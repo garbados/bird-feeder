@@ -20,7 +20,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "feedparser": "^2.2.9",
-    "pug": "^2.0.3",
+    "pug": "^3.0.0",
     "request": "^2.85.0",
     "yargs": "^11.0.0"
   },
